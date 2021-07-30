@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { interval } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { map, startWith } from 'rxjs/operators';
 
 const interval$ = interval(1000).pipe(map(val => val + 1));
 
